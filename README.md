@@ -1,100 +1,45 @@
-# Arc-9 Research (static site)
+# Arc-9 Research
 
-A small static website for sharing open experiments and questions. No backend: HTML, CSS, and minimal JavaScript, built with [Vite](https://vitejs.dev/).
+## About us
 
-## Quick start
+**Arc-9 Research** is led by **Grayson Kernan**, an independent researcher in Washington State. We work in public: open questions, visible reasoning, and room for others to correct, extend, or collaborate. The tone is curious and collaborative—not a product pitch or clinical service. Nothing here is medical advice or settled science.
 
-```bash
-npm install
-npm run dev
-```
+This repository is our **about page and research notebook**. Each direction has its own folder with open questions, experiment posts, dated updates, and a `data/` area for de-identified artifacts only.
 
-Open `http://127.0.0.1:4317``(the dev server runs `scripts/generate-experiment-pages.mjs` first so `/public/data/` stays in sync).
+## Current highlighted projects
 
-```bash
-npm run build    # output in dist/
-npm run preview  # serve dist/
-```
+### [Embodied cognition](embodied-cognition/)
 
-## Add or edit an experiment
+Does physical flexibility relate to flexible or lateral thinking—and how might body maps and proprioceptive precision connect mind and tissue? We are sketching behavioral pilots that could bridge embodied-cognition ideas with measurable tasks. **Details:** [project README](embodied-cognition/README.md).
 
-All entries live in **one file**: [`data/experiments.json`](data/experiments.json).
+### [Hypermobility & collagen matrix](hypermobility-collagen/)
 
-Each experiment object supports:
+How is collagen organized and loaded in hypermobile Ehlers–Danlos tissue, and could a lax matrix change how force reaches proprioceptors? One thread pairs ultrastructure and mechanics; another designs low-cost proprioception measures. **Details:** [project README](hypermobility-collagen/README.md).
 
-| Field | Description |
-| --- | --- |
-| `id` | URL slug (kebab-case, unique) |
-| `title` | Short title |
-| `question` | Plain-language open question |
-| `whyItMatters` | Why you care / why others might |
-| `status` | `idea`, `designing`, `seeking data`, `seeking funding`, or `running` |
-| `helpWanted` | Array: `data`, `collaborators`, `funding`, `equipment`, `participants`, etc. |
-| `helpNote` | Optional extra detail |
-| `tags` | Array of strings for filtering |
-| `relatedLinks` | `{ "label", "url" }` objects (can be empty) |
+### [Mast cells & ECM assembly](mast-cells-ecm/)
 
-After editing JSON, run `npm run dev` or `npm run build` so copies under `public/data/` and experiment path stubs are regenerated.
+Could mast-cell mediators disrupt collagen matrix assembly in hypermobile EDS—linking immune signaling to tissue fragility without a one-gene story for everyone? We are looking for cohorts where mast markers and connective phenotypes overlap. **Details:** [project README](mast-cells-ecm/README.md).
 
-Detail pages: `/experiment.html?slug=<id>` (also stubbed at `/experiments/<id>/` for cleaner sharing paths).
+### [Regulatory genomics](regulatory-genomics/)
 
-## Contact email & Formspree
+Non-coding and regulatory variants may matter as much as coding changes in collagen and hEDS loci. We want to rank candidates with modern regulatory prediction before expensive wet-lab work. **Details:** [project README](regulatory-genomics/README.md).
 
-Edit [`site-config.json`](site-config.json) at the repo root:
+Repo-wide context and process notes: [`posts/`](posts/).
 
-```json
-{
-  "contactEmail": "arc9research@gmail.com",
-  "formspreeEndpoint": "",
-  "siteUrl": "https://your-domain.example"
-}
-```
+## Get involved
 
-- **`contactEmail`**: Replace the placeholder when you have a real address. The site obfuscates it in the DOM until “Show address” is clicked; mailto links decode it in the browser.
-- **`formspreeEndpoint`**: Set to your Formspree form URL (e.g. `https://formspree.io/f/xxxx`) to enable the optional contact form on the home page. Leave empty to keep the form hidden.
+1. **I have done related work** — data, pilots, or methods that overlap a project. [Open an issue](https://github.com/Arc9Research/Main/issues/new?template=related-data.yml) (tag the [project label](CONTRIBUTING.md#project-labels)) or email below.
+2. **I want to collaborate** — co-design, IRB, lab or compute time. Start a [Discussion](https://github.com/Arc9Research/Main/discussions) or issue and name the project folder.
+3. **I want to fund work** — [Funding interest template](https://github.com/Arc9Research/Main/issues/new?template=funding-interest.yml).
 
-Also update Open Graph `og:url` in `index.html` when you know your production URL.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for data rules and labels.
 
-## Deploy
+## Contact
 
-### Vercel
+**[arc9research@gmail.com](mailto:arc9research@gmail.com)**
 
-1. Import this repository in [Vercel](https://vercel.com/).
-2. Build command: `npm run build`
-3. Output directory: `dist`
-4. `vercel.json` is included for basic static settings.
-
-### Netlify
-
-- Build command: `npm run build`
-- Publish directory: `dist`
-
-### GitHub Pages (this repo)
-
-Production deploys via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on push to `main`.
-
-- **Live URL:** [https://arc9research.github.io/Main/](https://arc9research.github.io/Main/)
-- **Base path:** set at build time with `VITE_BASE` (workflow uses `/Main/`). For a future org root site (`arc9research.github.io`), change the workflow env to `VITE_BASE: /` and update repository Pages settings.
-
-Local check matching production:
-
-```bash
-VITE_BASE=/Main/ npm run build
-npx vite preview --host 127.0.0.1 --port 4317
-```
-
-## Project layout
-
-```
-data/experiments.json   # source of truth for experiments
-site-config.json        # contact + optional form endpoint
-index.html              # home: about, list, contact
-experiment.html         # single experiment detail template
-src/                    # CSS + JS
-scripts/                # copies data to public/ before build
-public/                 # favicon, generated data copies
-```
+Public replies: [Discussions](https://github.com/Arc9Research/Main/discussions) or [Issues](https://github.com/Arc9Research/Main/issues).
 
 ## License
 
-Content is personal research material; add a license if you plan to open-source the repo itself.
+[Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).

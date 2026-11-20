@@ -1,0 +1,53 @@
+name: I have related data / prior work
+description: Share datasets, pilot results, methods, or citations that overlap an open experiment
+title: "[Related work] "
+labels: ["related-work"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for offering prior work. Do not include protected health information in this public issue.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Apply this GitHub label when you submit
+      options:
+        - embodied-cognition
+        - hypermobility-collagen
+        - mast-cells-ecm
+        - regulatory-genomics
+    validations:
+      required: true
+  - type: input
+    id: experiment
+    attributes:
+      label: Which experiment or question?
+      description: Link to a post in the project folder or paste the title
+      placeholder: e.g. hypermobility-collagen/2026-11-20-lax-collagen-proprioception.md
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What do you have?
+      description: Brief summary, links, or citations
+    validations:
+      required: true
+  - type: dropdown
+    id: sharing
+    attributes:
+      label: How can this be shared?
+      options:
+        - Public link or citation only
+        - Available under collaboration / data use agreement
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: GitHub handle or email if different from your account
+    validations:
+      required: false

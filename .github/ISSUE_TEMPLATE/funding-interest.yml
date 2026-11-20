@@ -1,0 +1,51 @@
+name: Funding interest
+description: Express interest in funding all or part of an open experiment
+title: "[Funding] "
+labels: ["funding"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template helps scope funding conversations. It does not create a binding commitment.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      options:
+        - embodied-cognition
+        - hypermobility-collagen
+        - mast-cells-ecm
+        - regulatory-genomics
+    validations:
+      required: true
+  - type: input
+    id: experiment
+    attributes:
+      label: Which experiment or direction?
+      description: Link to a project README or experiment post
+    validations:
+      required: true
+  - type: dropdown
+    id: scale
+    attributes:
+      label: Approximate scale
+      options:
+        - In-kind (equipment time, compute, space)
+        - Micro-grant (< USD 5k)
+        - Larger grant or sponsored project
+        - Exploring options
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Constraints or goals
+      description: Timeline, geography, reporting expectations, etc.
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+    validations:
+      required: false

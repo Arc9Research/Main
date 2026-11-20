@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discussions (public Q&A)
+    url: https://github.com/Arc9Research/Main/discussions
+    about: Open conversation, critique, and ideas that are not quite issues
+  - name: Email
+    url: mailto:arc9research@gmail.com
+    about: Direct contact for sensitive or detailed proposals
