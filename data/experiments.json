@@ -1,0 +1,95 @@
+{
+  "experiments": [
+    {
+      "id": "embodied-flexibility-cognition",
+      "title": "Body flexibility and flexible thinking",
+      "question": "Does body flexibility (hypermobility, measured with a self-administered Beighton score and the 5-Part Questionnaire) relate to flexible or lateral thinking (Alternate Uses Task, Remote Associates Test, task switching)?",
+      "whyItMatters": "This is part of an embodied-cognition sketch: the brain may use the physical relationships of body tissues as analogies when building conceptual relationships. If joint and tissue flexibility correlate with cognitive flexibility, that would be one testable bridge—not proof of the model, but a place to look.",
+      "status": "designing",
+      "helpWanted": ["collaborators", "participants", "funding"],
+      "helpNote": "Looking for study design partners, participant recruitment pathways, and IRB or funding support.",
+      "tags": ["embodied cognition", "hypermobility", "psychology", "behavioral"],
+      "relatedLinks": [
+        {
+          "label": "Beighton score (overview)",
+          "url": "https://hypermobility.org/help-advice/beighton-score/"
+        },
+        {
+          "label": "5-Part Questionnaire for joint hypermobility",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15730876/"
+        }
+      ]
+    },
+    {
+      "id": "mast-cells-collagen-heds",
+      "title": "Mast cells and collagen matrix in hEDS",
+      "question": "Can mast cell activity (tryptase, chymase, hereditary alpha-tryptasemia) disrupt collagen matrix assembly in hypermobile Ehlers–Danlos syndrome (hEDS)?",
+      "whyItMatters": "Mast cell involvement is often discussed alongside hypermobility, but mechanistic links to collagen organization are still thin. If mast-cell mediators alter matrix assembly, that could connect immune signals to tissue fragility without requiring a single collagen gene answer for every patient.",
+      "status": "seeking data",
+      "helpWanted": ["data", "collaborators"],
+      "helpNote": "Especially interested in existing biobank or clinical datasets where mast-cell markers and connective-tissue phenotypes overlap.",
+      "tags": ["hEDS", "mast cells", "collagen", "immunology"],
+      "relatedLinks": [
+        {
+          "label": "Hereditary alpha-tryptasemia (review context)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28190457/"
+        }
+      ]
+    },
+    {
+      "id": "heds-collagen-architecture",
+      "title": "Collagen architecture and mechanics in hEDS tissue",
+      "question": "Does hEDS tissue show measurably different collagen architecture (fibril diameter, packing, alignment, crosslinks) alongside mechanical testing versus controls—and does matrix built by cultured fibroblasts from the same person match their native tissue?",
+      "whyItMatters": "Many hEDS questions stop at genetics or symptom scales. Paired ultrastructure, mechanics, and patient-matched cell culture would clarify whether altered matrix is cell-intrinsic, environment-driven, or both.",
+      "status": "idea",
+      "helpWanted": ["equipment", "funding", "collaborators"],
+      "helpNote": "Need lab access for EM or advanced imaging, mechanical testing, and primary fibroblast work.",
+      "tags": ["hEDS", "collagen", "biomechanics", "imaging"],
+      "relatedLinks": []
+    },
+    {
+      "id": "collagen-piezo-proprioception",
+      "title": "Lax collagen matrix and proprioceptive signaling",
+      "question": "Does a lax or disorganized collagen matrix (and possibly residual strain-generated potentials, not bulk dry-tissue piezoelectricity) change how mechanical force reaches proprioceptors—helping explain poorer joint position sense in hypermobility?",
+      "whyItMatters": "Collagen is piezoelectric mainly when dry; in hydrated tissue the effect is largely screened and streaming potentials dominate. PIEZO2-deficient humans (Chesler et al., NEJM 2016) retain proprioception, so collagen piezoelectricity is unlikely to be the primary signal. The open gap is mechanical: hypermobility is associated with worse lower-limb joint position sense in a 2013 meta-analysis, while Rombaut et al. found intact vibration sense but impaired knee repositioning, and Clayton et al. reported proprioceptive precision deficits that track hypermobility severity. A lax matrix might alter stress transmission to receptors even when large-fiber sensation is intact.",
+      "status": "designing",
+      "helpWanted": ["collaborators", "participants", "funding"],
+      "helpNote": "Proposed low-cost pilot: Beighton score versus joint position error with eyes closed, plus vibration threshold—comparing errors across hypermobility levels without assuming a piezoelectric mechanism.",
+      "tags": ["proprioception", "collagen", "hypermobility", "biomechanics", "behavioral"],
+      "relatedLinks": [
+        {
+          "label": "Chesler et al. 2016 — PIEZO2 and proprioception (NEJM)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27959694/"
+        },
+        {
+          "label": "Smith et al. 2013 — BJHS proprioception meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23728275/"
+        },
+        {
+          "label": "Rombaut et al. — knee repositioning vs. vibration in EDS-HT",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19937459/"
+        },
+        {
+          "label": "Clayton et al. — proprioceptive precision and Beighton score",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26180743/"
+        }
+      ]
+    },
+    {
+      "id": "alphagenome-heds-variants",
+      "title": "Regulatory variants in collagen and hEDS genes",
+      "question": "Can AlphaGenome-style regulatory variant prediction on collagen and hEDS candidate genes (for example COL1A1 Sp1 variant rs1800012, TNXB) prioritize variants for wet-lab follow-up?",
+      "whyItMatters": "Coding variants explain only part of the story. Better ranking of non-coding and regulatory hits could shrink the search space before expensive functional assays.",
+      "status": "designing",
+      "helpWanted": ["collaborators"],
+      "helpNote": "Looking for compute and genomics collaborators comfortable with variant prioritization pipelines and open sharing of candidate lists.",
+      "tags": ["genomics", "hEDS", "collagen", "computational"],
+      "relatedLinks": [
+        {
+          "label": "rs1800012 (COL1A1) — dbSNP",
+          "url": "https://www.ncbi.nlm.nih.gov/snp/rs1800012"
+        }
+      ]
+    }
+  ]
+}
